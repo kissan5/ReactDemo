@@ -49,9 +49,9 @@ function favPokemonForm() {
     <div>
       <label htmlFor="">Enter your fav pokemon</label>
       <input type="text" value={favPokemon} onChange={handleInputChange} />
-      {/* <button type="button" onClick={fetchPokemonData}>
+      <button style = {{ backgroundColor: theme === "light" ? "white": "black" }} type="button" onClick={fetchPokemonData}>
         fetch my fav pokemon
-      </button> */}
+      </button>
       {pokemonData && (
         <div>
           <h2>{pokemonData.name}</h2>
